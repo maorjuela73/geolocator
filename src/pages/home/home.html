@@ -1,24 +1,35 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Puntos de préstamo
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  Seleccione un punto cualquiera para obtener información.
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    Si se encuentra cerca a un bicigestor, por favor seleccione la opción "Solicitar bici" en el bicipunto deseado. 
   </p>
-  <table>
-    <tr>
-      <th>Latitude</th>
-      <th>Longitude</th>
-    </tr>
-    <tr>
-      <td>{{nlatitude}}</td>
-      <td>{{nlongitude}}</td>
-    </tr>
-  </table>
+  <ion-grid>
+      <ion-row>
+        <ion-col text-center>
+          Latitude
+        </ion-col>
+        <ion-col text-center>
+          Longitude
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col text-center>
+            <ion-icon name="pin"></ion-icon>
+              {{nlatitude}}
+          </ion-col>
+          <ion-col text-center>
+            <ion-icon name="pin"></ion-icon>
+              {{nlongitude}}
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
 </ion-content>
